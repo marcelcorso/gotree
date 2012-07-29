@@ -17,7 +17,7 @@ func (v *Tree) Add(key string) {
 }
 
 func (v *Tree) _Add(n *Node, key string) {
-  if n.key < key {
+  if n.key > key {
     if n.right == nil {
       n.right = &Node{key: key}
     } else {
